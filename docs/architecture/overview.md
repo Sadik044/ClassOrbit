@@ -26,7 +26,7 @@ ClassOrbit is a content-first educational platform designed for Bangladeshi stud
                                   v
                     +---------------------------+
                     | Cloudflare Workers Backend|  <--- [PHASE 2 - INACTIVE]
-                    |  (Hono Router + RBAC API) |
+                    | (Routing framework: TBD)  |
                     +------+-------------+------+
                            |             |
            [D1 Native Binding]           [R2 S3 Presigned URLs]
@@ -58,7 +58,7 @@ ClassOrbit is a content-first educational platform designed for Bangladeshi stud
 
 ### 2.2 Cloudflare Workers Backend (`apps/api`) — Phase 2
 - **Status:** **PLANNED (Not implemented in Phase 0)**
-- **Technology:** Cloudflare Workers, Hono, `@cloudflare/workers-types`.
+- **Technology:** Cloudflare Workers, `@cloudflare/workers-types`. *(Note: Cloudflare Workers is the approved backend execution environment. The specific routing framework—e.g. Hono, native Worker `fetch`, or Itty Router—is undecided and will be evaluated during Phase 2).*
 - **Responsibilities:**
   - Serving the unified REST API (`api.classorbit.com`).
   - Request authentication, session validation, and strict Role-Based Access Control (RBAC).

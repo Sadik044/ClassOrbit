@@ -16,7 +16,7 @@ ClassOrbit is a modern, content-first educational platform designed for Banglade
 - **UI Components:** [shadcn/ui](https://ui.shadcn.com/) + [Radix UI](https://www.radix-ui.com/)
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Code Quality:** ESLint (`next/core-web-vitals`, `next/typescript`), `.editorconfig`
-- **Future Backend (Phase 2):** Cloudflare Workers (Hono Router)
+- **Future Backend (Phase 2):** Cloudflare Workers (Routing framework undecided / TBD)
 - **Future Database (Phase 2):** Cloudflare D1 (SQLite)
 - **Future Auth (Phase 3):** Better Auth + Google OAuth
 - **Future Object Storage (Phase 5):** Cloudflare R2
