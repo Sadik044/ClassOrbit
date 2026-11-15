@@ -11,7 +11,11 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1.5rem",
+        lg: "2rem",
+      },
       screens: {
         "2xl": "1400px",
       },
@@ -52,7 +56,14 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      maxWidth: {
+        "reading-compact": "36rem",
+        reading: "42rem",
+        "reading-wide": "48rem",
+      },
       borderRadius: {
+        "2xl": "calc(var(--radius) + 8px)",
+        xl: "calc(var(--radius) + 4px)",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
