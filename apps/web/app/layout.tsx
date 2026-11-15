@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Hind_Siliguri } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,9 +33,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="bn" className={`${inter.variable} ${hindSiliguri.variable}`}>
+    <html
+      lang="bn"
+      suppressHydrationWarning
+      className={`${inter.variable} ${hindSiliguri.variable}`}
+    >
       <body className="min-h-screen bg-background font-sans text-foreground antialiased">
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
